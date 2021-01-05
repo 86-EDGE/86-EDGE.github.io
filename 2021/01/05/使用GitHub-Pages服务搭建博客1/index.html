@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hexo</title>
+    <title>使用GitHub Pages服务搭建博客 - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="引子要加入Drops训练营，领到的第一份作业就是搭建一个自己的博客并发表一篇博文。  
+在学长的建议和指导下，我也决定使用hexo模板搭建自己的博客。  
+然后第一篇博客就记录一下搭建过程、遇到的问,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -33,16 +35,34 @@
 <body class="loading">
     <span id="config-title" style="display:none">Hexo</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">使用GitHub Pages服务搭建博客</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
     </div>
+    <div class="scrollbar"></div>
+</div>
+
     <div class="section">
         <div class="article">
-            <div class="main">
-                <div class="content">
-                
-                        <h3 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h3><p>要加入Drops训练营，领到的第一份作业就是搭建一个自己的博客并发表一篇博文。  </p>
+    <div class='main'>
+        <h1 class="title">使用GitHub Pages服务搭建博客</h1>
+        <div class="stuff">
+            <span>一月 05, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h3 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h3><p>要加入Drops训练营，领到的第一份作业就是搭建一个自己的博客并发表一篇博文。  </p>
 <p>在学长的建议和指导下，我也决定使用hexo模板搭建自己的博客。  </p>
 <p>然后第一篇博客就记录一下搭建过程、遇到的问题以及解决方案吧。</p>
 <h3 id="在Git-Bash中的操作"><a href="#在Git-Bash中的操作" class="headerlink" title="在Git Bash中的操作"></a>在Git Bash中的操作</h3><p>那么在依次安装了Git、nodejs和typora之后（这里特别感谢学长把typora的安装包发出来，官网下载速度感人），就要开始正式的搭建了。</p>
@@ -78,7 +98,7 @@
 <p>返回了</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm WARN lenovo@1.0.0 No description</span><br><span class="line"></span><br><span class="line">+ hexo-server@2.0.0</span><br><span class="line">updated 1 package and audited 51 packages in 46.375s</span><br><span class="line">found 0 vulnerabilities</span><br></pre></td></tr></table></figure>
 <p>相比上一次确实少了几条“WARN”证明这次操作是有帮助的  </p>
-<p>随即在网上搜索“npm WARN <a href="mailto:&#108;&#x65;&#x6e;&#111;&#x76;&#x6f;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;">&#108;&#x65;&#x6e;&#111;&#x76;&#x6f;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;</a> No description”的解决方案  </p>
+<p>随即在网上搜索“npm WARN <a href="mailto:&#x6c;&#101;&#x6e;&#x6f;&#118;&#111;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;">&#x6c;&#101;&#x6e;&#x6f;&#118;&#111;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;</a> No description”的解决方案  </p>
 <p>获得结果为“报错是这样的,这个其实是无所谓的,不用管他都可以,”</p>
 <p>我：。。。。  </p>
 <p>ok 跳过这个错误之后再次尝试开启服务，依旧返回熟悉的：  </p>
@@ -114,13 +134,44 @@
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>整个搭建和部署的经历像极了之前玩游戏打mod，跟着教程一步一步走，也颇有乐趣。感谢无数前辈出的各路教程以及Q&amp;A，善用搜索引擎也帮了我不小的忙，自己一点一点解决问题，拒绝做伸手党。  </p>
 <p>ok 这就是我这篇博客的内容了，希望能够进入Drops训练营和学长一起学习，一起打CTF。然后也许两年之后，我也能在招新中以学长的身份教新人怎么搭博客：）</p>
 
-                
-                </div>
-            </div>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
         </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
     </div>
+    
 </div>
 
+
+    </div>
+</div>
 </body>
 
 
