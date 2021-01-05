@@ -67,7 +67,7 @@
 <p>然后第一篇博客就记录一下搭建过程、遇到的问题以及解决方案吧。</p>
 <h3 id="在Git-Bash中的操作"><a href="#在Git-Bash中的操作" class="headerlink" title="在Git Bash中的操作"></a>在Git Bash中的操作</h3><p>那么在依次安装了Git、nodejs和typora之后（这里特别感谢学长把typora的安装包发出来，官网下载速度感人），就要开始正式的搭建了。</p>
 <p>第一步进入Git base  </p>
-<p>执行了测试命令：  ``</p>
+<p>执行了测试命令：  </p>
 <p><code>git version</code>  </p>
 <p><code>node -v</code>  </p>
 <p><code>npm -v</code>  </p>
@@ -98,7 +98,7 @@
 <p>返回了</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm WARN lenovo@1.0.0 No description</span><br><span class="line"></span><br><span class="line">+ hexo-server@2.0.0</span><br><span class="line">updated 1 package and audited 51 packages in 46.375s</span><br><span class="line">found 0 vulnerabilities</span><br></pre></td></tr></table></figure>
 <p>相比上一次确实少了几条“WARN”证明这次操作是有帮助的  </p>
-<p>随即在网上搜索“npm WARN <a href="mailto:&#x6c;&#101;&#x6e;&#x6f;&#118;&#111;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;">&#x6c;&#101;&#x6e;&#x6f;&#118;&#111;&#64;&#x31;&#x2e;&#x30;&#46;&#x30;</a> No description”的解决方案  </p>
+<p>随即在网上搜索“npm WARN <a href="mailto:&#108;&#x65;&#110;&#x6f;&#118;&#111;&#64;&#49;&#x2e;&#x30;&#46;&#48;">&#108;&#x65;&#110;&#x6f;&#118;&#111;&#64;&#49;&#x2e;&#x30;&#46;&#48;</a> No description”的解决方案  </p>
 <p>获得结果为“报错是这样的,这个其实是无所谓的,不用管他都可以,”</p>
 <p>我：。。。。  </p>
 <p>ok 跳过这个错误之后再次尝试开启服务，依旧返回熟悉的：  </p>
@@ -125,7 +125,8 @@
 <p>然后无论我怎么部署，浏览器中显示的只有那句创建HTML页面时打的“Hello World”  </p>
 <p>本着对自己生命健康财产安全负责的态度，我老老实实的选择上床睡觉。</p>
 <p>一觉醒来，继续部署，半个小时过去没有一点进展。  </p>
-<p>在bing上搜索“hexo INFO Validating config错误”找到了一篇博文，解决了我的问题。（<a target="_blank" rel="noopener" href="http://smartadmin.com.cn/smartadmin/show-3955.html%EF%BC%89">http://smartadmin.com.cn/smartadmin/show-3955.html）</a>  </p>
+<p>在bing上搜索“hexo INFO Validating config错误”找到了一篇博文，解决了我的问题。  </p>
+<p>（<a target="_blank" rel="noopener" href="http://smartadmin.com.cn/smartadmin/show-3955.html%EF%BC%89">http://smartadmin.com.cn/smartadmin/show-3955.html）</a>  </p>
 <p>原文如下：“原来从2020.10.1开始github默认分支从master改为了main，教程及脚本都还是默认master，所以只需要将_config.yml文件中改为部署到github的main分支即可，然后打开github.io主页，成功打开。”  </p>
 <p>照做，果然成功。</p>
 <p>这一番折腾之后，我终于在网上看到了由GitHub Pages 静态站点托管服务呈现的我的hexo模板博客。  </p>
